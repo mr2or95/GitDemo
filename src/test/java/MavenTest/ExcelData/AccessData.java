@@ -99,6 +99,8 @@ public class AccessData {
 	// now find out the number of sheets in the workbook
 	int numsheets = workbk.getNumberOfSheets();
 	
+	System.out.println("Providing changes to monitor github");
+	
 	// find the sheet with the testcases and it is called CompanySet
 	for (int i = 0; i < numsheets; i++) {
 		if (workbk.getSheetName(i).equalsIgnoreCase("CompanySet")) {
@@ -116,6 +118,8 @@ public class AccessData {
 				
 				int index = 0;
 				int column = 0;
+				
+				System.out.println("adding another print statement");
 				
 				while (cel.hasNext()) {
 					// find out what the header cell is
